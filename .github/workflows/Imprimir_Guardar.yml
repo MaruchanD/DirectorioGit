@@ -1,4 +1,4 @@
-name: Impresion de Datos
+name: Impresion de Datos/Guardar
 on:
   schedule:
      - cron: '00 0 * * WED' # Runs every day at 00:00 UTC
