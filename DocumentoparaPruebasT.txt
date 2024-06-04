@@ -1,2 +1,5 @@
 #Taller de Herramientas de Analisis de datos en Ciencia e Industria.
 ##Primera linea de texto
+###Ayudas 
+#### https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
+#### https://crontab.guru/
