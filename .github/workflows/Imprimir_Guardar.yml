@@ -1,0 +1,25 @@
+name: Impresion de Datos
+on:
+  schedule:
+     - cron: '00 0 * * WED' # Runs every day at 00:00 UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  Analizar_Tabla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Imprimir tabla bruta y neta
+        run: |
+          echo "tabla desde la fuente"
+          cat datos.csv
+          echo "filtrando datos"
+          grep -iv hotmail datos.csv
+          
