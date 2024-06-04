@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "tabla desde la fuente"
           cat datos.csv
-          
+          echo 
           echo "filtrando datos"
           grep -iv hotmail datos.csv | grep -v 14 > datos_filtrados.csv
       - name: Commit results
