@@ -5,7 +5,7 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  check_earnings:
+  Analizar_Tabla:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,10 +16,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Imprimir tabla burta y neta
+      - name: Imprimir tabla bruta y neta
         run: |
           echo "tabla desde la fuente"
-          cat datos.cvs
+          cat datos.csv
           echo "filtrando datos"
           grep -iv hotmail data.csv
           
