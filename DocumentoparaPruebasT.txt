@@ -3,7 +3,7 @@
 ###Ayudas 
 #### https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
 #### https://crontab.guru/
-#import numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 
 # Generar datos aleatorios (por ejemplo, 1000 valores)
